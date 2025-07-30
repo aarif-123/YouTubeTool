@@ -18,7 +18,7 @@ services:
       sizeGB: 1
 
   # Frontend web service
-  - type: static
+  - type: web
     name: yt-snap-to-pdf-web
     env: node
     buildCommand: npm install && npm run build

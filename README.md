@@ -41,7 +41,7 @@ YT Snap-to-PDF is a web application that allows you to convert YouTube videos or
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/yt-snap-to-pdf.git
+git clone git@github.com:aarif-123/YouTubeTool.git
 cd yt-snap-to-pdf
 
 # Install dependencies

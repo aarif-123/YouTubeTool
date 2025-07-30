@@ -18,11 +18,11 @@ services:
       sizeGB: 1
 
   # Frontend web service
-  - type: web
+  - type: static
     name: yt-snap-to-pdf-web
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm run preview
+    staticPublishPath: ./dist
     envVars:
       - key: NODE_VERSION
         value: 18.x

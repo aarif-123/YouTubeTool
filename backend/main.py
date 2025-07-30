@@ -10,7 +10,7 @@ app = FastAPI()
 # CORS for development - change in production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=["https://youtubetool-frontend.onrender.com"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

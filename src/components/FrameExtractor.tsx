@@ -114,7 +114,7 @@ const FrameExtractor: React.FC<FrameExtractorProps> = ({
     formData.append("hash_threshold", "2");
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/extract-frames/", {
+      const response = await fetch("https://backend-yt-tew2.onrender.com", {
         method: "POST",
         body: formData,
       });

@@ -114,7 +114,7 @@ const FrameExtractor: React.FC<FrameExtractorProps> = ({
     formData.append("hash_threshold", "2");
 
     try {
-      const response = await fetch("https://backend-yt-tew2.onrender.com", {
+      const response = await fetch("https://backend-yt-tew2.onrender.com/extract-frames/", {
         method: "POST",
         body: formData,
       });
@@ -123,7 +123,7 @@ const FrameExtractor: React.FC<FrameExtractorProps> = ({
       // Convert backend URLs to Frame objects
       const ytFrames: Frame[] = data.frames.map((item: { url: string, timestamp: number }, idx: number) => ({
         id: `yt-frame-${idx}`,
-        dataUrl: `http://127.0.0.1:8000${item.url}`,
+        dataUrl: `https://backend-yt-tew2.onrender.com${item.url}`,
         timestamp: item.timestamp
       }));
       setFrames(ytFrames);
